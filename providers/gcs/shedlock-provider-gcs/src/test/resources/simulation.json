@@ -1,0 +1,163 @@
+{
+  "data": {
+    "pairs": [
+      {"request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/upload/storage/v1/b/ShedLock/o"
+        } ],
+        "requiresState": {
+          "lockAcquired": "true"
+        },
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "POST"
+        } ],
+        "body" : []
+      },
+        "response" : {
+          "status" : 500,
+          "body" : "{\n  \"kind\": \"storage#object\",\n  \"id\": \"ShedLock/item\",\n  \"selfLink\": \"https://www.googleapis.com/storage/v1/b/ShedLock/o/testfile.json\",\n  \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/ShedLock/o/testfile.json?generation=1594548855337964&alt=media\",\n  \"name\": \"testfile.json\",\n  \"bucket\": \"ShedLock\",\n  \"generation\": \"1594548855337964\",\n  \"metageneration\": \"1\",\n  \"contentType\": \"application/json\",\n  \"storageClass\": \"STANDARD\",\n  \"size\": \"2\",\n  \"md5Hash\": \"mZFLkyvTelC5g8XnyQrpOw==\",\n  \"crc32c\": \"KXvQqg==\",\n  \"etag\": \"COzn5bC9x+oCEAE=\",\n  \"timeCreated\": \"2020-07-12T10:14:15.337Z\",\n  \"updated\": \"2020-07-12T10:14:15.337Z\",\n  \"timeStorageClassUpdated\": \"2020-07-12T10:14:15.337Z\"\n}\n",
+          "encodedBody" : false,
+          "headers" : {
+          }
+        }
+      },
+      {"request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/upload/storage/v1/b/ShedLock/o"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "POST"
+        } ],
+        "body" : []
+      },
+        "response" : {
+          "status" : 200,
+          "body" : "{\n  \"kind\": \"storage#object\",\n  \"id\": \"ShedLock/item\",\n  \"selfLink\": \"https://www.googleapis.com/storage/v1/b/ShedLock/o/lock.json\",\n  \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/ShedLock/o/lock.json?generation=1594548855337964&alt=media\",\n  \"name\": \"lock.json\",\n  \"bucket\": \"ShedLock\",\n  \"generation\": \"1594548855337964\",\n  \"metageneration\": \"1\",\n  \"contentType\": \"application/json\",\n  \"storageClass\": \"STANDARD\",\n  \"size\": \"2\",\n  \"md5Hash\": \"mZFLkyvTelC5g8XnyQrpOw==\",\n  \"crc32c\": \"KXvQqg==\",\n  \"etag\": \"COzn5bC9x+oCEAE=\",\n  \"timeCreated\": \"2020-07-12T10:14:15.337Z\",\n  \"updated\": \"2020-07-12T10:14:15.337Z\",\n  \"timeStorageClassUpdated\": \"2020-07-12T10:14:15.337Z\"\n}\n",
+          "encodedBody" : false,
+          "headers" : {
+          },
+          "transitionsState" : {
+            "lockAcquired" : "true"
+          }
+        }
+      },
+      {"request" : {
+        "path" : [ {
+          "matcher" : "glob",
+          "value" : "/storage/v1/b/ShedLock/o/*"
+        } ],
+        "requiresState": {
+          "lockAcquired": "true"
+        },
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "body" : []
+      },
+        "response" : {
+          "status" : 200,
+          "body" : "{\n  \"kind\": \"storage#object\",\n  \"id\": \"ShedLock/item\",\n  \"selfLink\": \"https://www.googleapis.com/storage/v1/b/ShedLock/o/lock.json\",\n  \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/ShedLock/o/lock.json\",\n  \"name\": \"lock.json\",\n  \"bucket\": \"ShedLock\",\n  \"generation\": \"1594548855337964\",\n  \"metageneration\": \"1\",\n  \"contentType\": \"application/json\",\n  \"storageClass\": \"STANDARD\",\n  \"size\": \"2\",\n  \"md5Hash\": \"mZFLkyvTelC5g8XnyQrpOw==\",\n  \"crc32c\": \"KXvQqg==\",\n  \"etag\": \"COzn5bC9x+oCEAE=\",\n  \"timeCreated\": \"2020-07-12T10:14:15.337Z\",\n  \"updated\": \"2020-07-12T10:14:15.337Z\",\n  \"timeStorageClassUpdated\": \"2020-07-12T10:14:15.337Z\"\n}\n",
+          "encodedBody" : false,
+          "headers" : {
+          }
+        }
+      },
+      {"request" : {
+        "path" : [ {
+          "matcher" : "glob",
+          "value" : "/download/storage/v1/b/ShedLock/o/lock.json"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "body" : []
+      },
+        "response" : {
+          "status" : 200,
+          "body" : "{\n  \"kind\": \"storage#object\",\n  \"id\": \"ShedLock/lock.json\",\n  \"selfLink\": \"https://www.googleapis.com/storage/v1/b/ShedLock/o/lock.json\",\n  \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/ShedLock/o/lock.json\",\n  \"name\": \"lock.json\",\n  \"bucket\": \"ShedLock\",\n  \"generation\": \"1594548855337964\",\n  \"metageneration\": \"1\",\n  \"contentType\": \"application/json\",\n  \"storageClass\": \"STANDARD\",\n  \"size\": \"2\",\n  \"md5Hash\": \"mZFLkyvTelC5g8XnyQrpOw==\",\n  \"crc32c\": \"KXvQqg==\",\n  \"etag\": \"COzn5bC9x+oCEAE=\",\n  \"timeCreated\": \"2020-07-12T10:14:15.337Z\",\n  \"updated\": \"2020-07-12T10:14:15.337Z\",\n  \"timeStorageClassUpdated\": \"2020-07-12T10:14:15.337Z\"\n}\n",
+          "encodedBody" : false,
+          "headers" : {
+          }
+        }
+      },
+      {"request" : {
+        "path" : [ {
+          "matcher" : "glob",
+          "value" : "/storage/v1/b/ShedLock/o/lock.json/rewriteTo/*"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "POST"
+        } ],
+        "body" : []
+      },
+        "response" : {
+          "status" : 200,
+          "body" : "{\"kind\":\"storage#rewriteResponse\",\"totalBytesRewritten\":\"123\",\"objectSize\":\"123\",\"done\":true,\"rewriteToken\":\"123\",\"resource\":{\n  \"kind\": \"storage#object\",\n  \"id\": \"ShedLock/item\",\n  \"selfLink\": \"https://www.googleapis.com/storage/v1/b/ShedLock/o/lock.json.unlocked\",\n  \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/ShedLock/o/lock.json.unlocked\",\n  \"name\": \"lock.json.unlocked\",\n  \"bucket\": \"ShedLock\",\n  \"generation\": \"1594548855337964\",\n  \"metageneration\": \"1\",\n  \"contentType\": \"application/json\",\n  \"storageClass\": \"STANDARD\",\n  \"size\": \"2\",\n  \"md5Hash\": \"mZFLkyvTelC5g8XnyQrpOw==\",\n  \"crc32c\": \"KXvQqg==\",\n  \"etag\": \"COzn5bC9x+oCEAE=\",\n  \"timeCreated\": \"2020-07-12T10:14:15.337Z\",\n  \"updated\": \"2020-07-12T10:14:15.337Z\",\n  \"timeStorageClassUpdated\": \"2020-07-12T10:14:15.337Z\"\n}}",
+          "encodedBody" : false,
+          "headers" : {
+          },
+          "transitionsState" : {
+            "lockAcquired" : "false"
+          }
+        }
+      },
+      {"request" : {
+        "path" : [ {
+          "matcher" : "glob",
+          "value" : "/storage/v1/b/ShedLock/o/lock.json"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "DELETE"
+        } ],
+        "body" : []
+      },
+        "response" : {
+          "status" : 200,
+          "body" : "{\"kind\":\"storage#rewriteResponse\",\"totalBytesRewritten\":\"123\",\"objectSize\":\"123\",\"done\":true,\"rewriteToken\":\"123\",\"resource\":{\n  \"kind\": \"storage#object\",\n  \"id\": \"ShedLock/item\",\n  \"selfLink\": \"https://www.googleapis.com/storage/v1/b/ShedLock/o/lock.json.unlocked\",\n  \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/ShedLock/o/lock.json.unlocked\",\n  \"name\": \"lock.json.unlocked\",\n  \"bucket\": \"ShedLock\",\n  \"generation\": \"1594548855337964\",\n  \"metageneration\": \"1\",\n  \"contentType\": \"application/json\",\n  \"storageClass\": \"STANDARD\",\n  \"size\": \"2\",\n  \"md5Hash\": \"mZFLkyvTelC5g8XnyQrpOw==\",\n  \"crc32c\": \"KXvQqg==\",\n  \"etag\": \"COzn5bC9x+oCEAE=\",\n  \"timeCreated\": \"2020-07-12T10:14:15.337Z\",\n  \"updated\": \"2020-07-12T10:14:15.337Z\",\n  \"timeStorageClassUpdated\": \"2020-07-12T10:14:15.337Z\"\n}}",
+          "encodedBody" : false,
+          "headers" : {
+          },
+          "transitionsState" : {
+            "lockAcquired" : "false"
+          }
+        }
+      },
+      {"request" : {
+        "path" : [ {
+          "matcher" : "glob",
+          "value" : "/storage/v1/b/ShedLock/o/*"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "body" : []
+      },
+        "response" : {
+          "status" : 404,
+          "body" : "{\"kind\":\"storage#rewriteResponse\",\"totalBytesRewritten\":\"123\",\"objectSize\":\"123\",\"done\":true,\"rewriteToken\":\"123\",\"resource\":{\n  \"kind\": \"storage#object\",\n  \"id\": \"ShedLock/item\",\n  \"selfLink\": \"https://www.googleapis.com/storage/v1/b/ShedLock/o/lock.json.unlocked\",\n  \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/ShedLock/o/lock.json.unlocked\",\n  \"name\": \"lock.json.unlocked\",\n  \"bucket\": \"ShedLock\",\n  \"generation\": \"1594548855337964\",\n  \"metageneration\": \"1\",\n  \"contentType\": \"application/json\",\n  \"storageClass\": \"STANDARD\",\n  \"size\": \"2\",\n  \"md5Hash\": \"mZFLkyvTelC5g8XnyQrpOw==\",\n  \"crc32c\": \"KXvQqg==\",\n  \"etag\": \"COzn5bC9x+oCEAE=\",\n  \"timeCreated\": \"2020-07-12T10:14:15.337Z\",\n  \"updated\": \"2020-07-12T10:14:15.337Z\",\n  \"timeStorageClassUpdated\": \"2020-07-12T10:14:15.337Z\"\n}}",
+          "encodedBody" : false,
+          "headers" : {
+          },
+          "transitionsState" : {
+            "lockAcquired" : "false"
+          }
+        }
+      }
+    ],
+    "globalActions": {
+      "delays": []
+    }
+  },
+  "meta": {
+    "schemaVersion": "v5"
+  }
+}
